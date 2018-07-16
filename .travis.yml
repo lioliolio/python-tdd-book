@@ -1,0 +1,12 @@
+language: python
+python:
+  - '3.6'
+install:
+  - pip install pipenv
+  - pipenv install --dev
+script:
+  - make migrate
+  - make test
+notifications:
+  slack:
+    secure: X//Ubum7cjRRo9AHwQ1HGGLustQ3hFmxdH5I1miHnLoWDmcjGUvPiQU+tzRv2telTKb+scsi5qV0wFQtM60kJNRHIHOU+lugTDU4FnyqHj3qwyB91C+IZjya6uhqytUrTTC2URgtzcX61THqv0N+HQTxXkkTKApvr2lOslCVJ1HQHJHrxnm7AMDp/NgTRBinTjjbbdifVi9EAV43BC7gnaX+FLdU/eqttbrMJwiXDg+cNF+zQrowzv++hI0as5aLkfkLDe1gPEFOT3UsJ7sdXB5b8ebCPITcivYKoIZ+UpwXcyrA5fL0dHjilta2yE21gEMe2w/9FE6oN4MeP4xacTj1KcUxKDFfy+WZVGiYmFNZvRFNOseEJMg4YoICa/2fQOL1NPOUXAdxoKZZVIGHC49dXe9XbhDS9Yox6upQKxhBI+voqQakSoKa1tfonQ1YRbaWB68vuoh55t5SMnsWVcUAhyKcWz6C9LRfaMu4Z8/kMrEw33nNGLO6cp5sgRCpy3lMxE10aBkUTf4pZOtgubNrYW4Rn9pcKQ9GBZZa6f/WSdww9Ixv+w3/nEP5LxdGkRWlnnGP2s+tWr7Fe9dsIg6Qyn3Ri9BXUv+0HJuoONchycZI3vjKAwfnhJ05EGFhhDm1ted5da7L9BzNFsdlemtzGTf9+q7osAJlj3v+O0k=
